@@ -68,7 +68,7 @@ export default function QuestionGrid() {
                   "px-3 py-1.5 text-xs font-medium rounded-md whitespace-nowrap transition-colors",
                   "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1",
                   activeSection === section
-                    ? "bg-pariksha-600 text-white"
+                    ? "bg-primary-600 text-white"
                     : "bg-muted text-muted-foreground hover:bg-muted/80"
                 )}
               >

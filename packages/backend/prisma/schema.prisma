@@ -1,0 +1,114 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String
+  password  String
+  role      Role     @default(CENTER) // ADMIN, CENTER
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  auditLogs AuditLog[]
+}
+
+enum Role {
+  ADMIN
+  CENTER
+}
+
+model Question {
+  id          String   @id @default(uuid())
+  text        String
+  subject     String
+  topic       String
+  difficulty  String   // EASY, MEDIUM, HARD
+  marks       Int
+  type        String   // MCQ, DESCRIPTIVE
+  status      String   @default("APPROVED")
+  options     Json?    // Optional for MCQ
+  correctAns  String?  // Optional for MCQ
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([status, difficulty])
+}
+
+model Exam {
+  id            String   @id @default(uuid())
+  title         String
+  description   String?
+  scheduledTime DateTime
+  status        ExamStatus @default(CREATED)
+  
+  blueprint     ExamBlueprint?
+  sessions      Session[]
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([status])
+}
+
+enum ExamStatus {
+  CREATED
+  SCHEDULED
+  ACTIVE
+  COMPLETED
+}
+
+model ExamBlueprint {
+  id               String   @id @default(uuid())
+  examId           String   @unique
+  exam             Exam     @relation(fields: [examId], references: [id], onDelete: Cascade)
+  totalQuestions   Int
+  
+  // Stored as JSON: { "EASY": 8, "MEDIUM": 8, "HARD": 4 }
+  difficultyDist   Json
+  // Stored as JSON: { "Math": 10, "Physics": 10 }
+  subjectDist      Json
+  
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Session {
+  id            String   @id @default(uuid())
+  examId        String
+  exam          Exam     @relation(fields: [examId], references: [id])
+  candidateName String
+  admitCard     String
+  centerId      String
+  status        String   @default("ACTIVE") // ACTIVE, SUBMITTED
+  
+  responses     Json?
+  
+  startedAt     DateTime @default(now())
+  submittedAt   DateTime?
+
+  @@index([examId, status])
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  role      String?
+  action    String
+  status    String
+  details   Json?
+  ipAddress String?
+  timestamp DateTime @default(now())
+
+  @@index([timestamp])
+  @@index([userId])
+}

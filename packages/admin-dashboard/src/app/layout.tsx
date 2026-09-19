@@ -6,8 +6,8 @@ import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ParikshaSuraksha Admin Dashboard",
-  description: "AI-powered exam integrity system - Administration dashboard",
+  title: "Secure Cloud-Based Just-in-Time Question Paper Generation and Management System - Admin Dashboard",
+  description: "Administrative interface for the Secure JIT System.",
 };
 
 export default function RootLayout({

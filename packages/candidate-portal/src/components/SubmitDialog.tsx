@@ -156,7 +156,7 @@ export default function SubmitDialog({ isOpen, onClose, onConfirm }: SubmitDialo
               "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
               isSubmitting
                 ? "bg-muted text-muted-foreground cursor-not-allowed"
-                : "bg-pariksha-600 text-white hover:bg-pariksha-700"
+                : "bg-primary-600 text-white hover:bg-primary-700"
             )}
             aria-label={isSubmitting ? "Submitting exam..." : "Confirm and submit exam"}
           >

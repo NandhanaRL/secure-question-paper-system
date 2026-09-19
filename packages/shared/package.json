@@ -1,7 +1,7 @@
 {
-  "name": "@pariksha/shared",
+  "name": "@secure-jit/shared",
   "version": "1.0.0",
-  "description": "Shared types, validation schemas, and constants for ParikshaSuraksha exam integrity system",
+  "description": "Shared types, validation schemas, and constants for Secure JIT System exam integrity system",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

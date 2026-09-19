@@ -104,7 +104,7 @@ export default function ResultsPage() {
   }, [result]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pariksha-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-primary-50 to-white">
       <AccessibilityToolbar />
 
       {/* Header */}
@@ -118,8 +118,8 @@ export default function ResultsPage() {
             <ArrowLeft className="h-5 w-5" aria-hidden="true" />
           </button>
           <div className="flex items-center gap-2">
-            <Shield className="h-6 w-6 text-pariksha-600" aria-hidden="true" />
-            <span className="font-bold text-pariksha-900">ParikshaSuraksha</span>
+            <Shield className="h-6 w-6 text-primary-600" aria-hidden="true" />
+            <span className="font-bold text-primary-900">Secure JIT System</span>
           </div>
         </div>
       </header>
@@ -186,7 +186,7 @@ export default function ResultsPage() {
                 "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                 isLoading || !admitCardNumber.trim()
                   ? "bg-muted text-muted-foreground cursor-not-allowed"
-                  : "bg-pariksha-600 text-white hover:bg-pariksha-700"
+                  : "bg-primary-600 text-white hover:bg-primary-700"
               )}
             >
               {isLoading ? "Sending OTP..." : "Send OTP"}
@@ -238,7 +238,7 @@ export default function ResultsPage() {
                   "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                   isLoading || otp.length < 6
                     ? "bg-muted text-muted-foreground cursor-not-allowed"
-                    : "bg-pariksha-600 text-white hover:bg-pariksha-700"
+                    : "bg-primary-600 text-white hover:bg-primary-700"
                 )}
               >
                 {isLoading ? "Verifying..." : "View Results"}
@@ -253,7 +253,7 @@ export default function ResultsPage() {
             {/* Candidate info */}
             <div className="bg-card rounded-xl border shadow-sm p-6">
               <div className="flex items-center gap-3 mb-4">
-                <User className="h-5 w-5 text-pariksha-600" aria-hidden="true" />
+                <User className="h-5 w-5 text-primary-600" aria-hidden="true" />
                 <h2 className="text-lg font-semibold text-card-foreground">
                   {result.candidateName}
                 </h2>
@@ -326,7 +326,7 @@ export default function ResultsPage() {
                 "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                 isDownloading
                   ? "bg-muted text-muted-foreground cursor-not-allowed"
-                  : "bg-pariksha-600 text-white hover:bg-pariksha-700"
+                  : "bg-primary-600 text-white hover:bg-primary-700"
               )}
               aria-label={isDownloading ? "Downloading scorecard..." : "Download scorecard as PDF"}
             >
@@ -363,7 +363,7 @@ function ScoreCard({
     <div
       className={cn(
         "bg-card rounded-xl border shadow-sm p-6 text-center",
-        highlight && "ring-2 ring-pariksha-400"
+        highlight && "ring-2 ring-primary-400"
       )}
     >
       <div className={cn("flex justify-center mb-2", color)}>{icon}</div>

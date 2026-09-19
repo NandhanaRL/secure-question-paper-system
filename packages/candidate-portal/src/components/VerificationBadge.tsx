@@ -96,7 +96,7 @@ export default function VerificationBadge({
           {showLink && hash && (
             <a
               href={`/verify/${hash}`}
-              className="inline-flex items-center gap-1 text-pariksha-600 hover:text-pariksha-700 font-medium mt-1 focus-visible:ring-2 focus-visible:ring-ring rounded"
+              className="inline-flex items-center gap-1 text-primary-600 hover:text-primary-700 font-medium mt-1 focus-visible:ring-2 focus-visible:ring-ring rounded"
             >
               View full verification
               <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />

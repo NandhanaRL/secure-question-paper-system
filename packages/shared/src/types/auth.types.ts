@@ -1,5 +1,5 @@
 /**
- * Authentication and authorization types for the ParikshaSuraksha exam integrity system.
+ * Authentication and authorization types for the Secure JIT System exam integrity system.
  */
 
 /**

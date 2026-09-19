@@ -1,5 +1,5 @@
 /**
- * Question-related types for the ParikshaSuraksha exam integrity system.
+ * Question-related types for the Secure JIT System exam integrity system.
  * Covers question templates, parameter instantiations, IRT calibration,
  * and distractor profiles.
  */

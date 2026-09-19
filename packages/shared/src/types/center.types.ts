@@ -1,5 +1,5 @@
 /**
- * Exam center and seating types for the ParikshaSuraksha exam integrity system.
+ * Exam center and seating types for the Secure JIT System exam integrity system.
  */
 
 export enum CenterStatus {

@@ -43,8 +43,6 @@ const navItems: NavItem[] = [
     icon: FileQuestion,
     children: [
       { label: "Question Bank", href: "/admin/questions/bank" },
-      { label: "Generate", href: "/admin/questions/generate" },
-      { label: "Calibrate", href: "/admin/questions/calibrate" },
     ],
   },
   {
@@ -93,8 +91,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <Link href="/admin/dashboard" className="flex items-center gap-2">
             <BookOpen className="h-6 w-6 text-primary" />
             {sidebarOpen && (
-              <span className="font-bold text-lg bg-gradient-to-r from-pariksha-600 to-pariksha-400 bg-clip-text text-transparent">
-                ParikshaSuraksha
+              <span className="font-bold text-lg bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent truncate w-full">
+                Secure JIT System
               </span>
             )}
           </Link>

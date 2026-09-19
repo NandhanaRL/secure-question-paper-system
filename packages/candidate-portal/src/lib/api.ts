@@ -1,5 +1,5 @@
 /**
- * API client for ParikshaSuraksha candidate portal.
+ * API client for Secure JIT System candidate portal.
  * Handles authentication, request/response formatting, and error handling.
  */
 

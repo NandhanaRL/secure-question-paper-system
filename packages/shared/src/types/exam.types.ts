@@ -1,5 +1,5 @@
 /**
- * Exam-related types for the ParikshaSuraksha exam integrity system.
+ * Exam-related types for the Secure JIT System exam integrity system.
  * Covers exam lifecycle, blueprints, and difficulty distribution.
  */
 

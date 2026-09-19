@@ -51,7 +51,7 @@ export default function AccessibilityToolbar() {
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
           "fixed top-4 right-4 z-50 p-2 rounded-lg shadow-lg transition-colors",
-          "bg-pariksha-600 text-white hover:bg-pariksha-700",
+          "bg-primary-600 text-white hover:bg-primary-700",
           "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         )}
         aria-label={isOpen ? "Close accessibility settings" : "Open accessibility settings"}
@@ -154,7 +154,7 @@ function ToggleItem({
         className={cn(
           "relative inline-flex h-6 w-11 items-center rounded-full transition-colors flex-shrink-0 mt-1",
           "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-          checked ? "bg-pariksha-600" : "bg-muted"
+          checked ? "bg-primary-600" : "bg-muted"
         )}
       >
         <span

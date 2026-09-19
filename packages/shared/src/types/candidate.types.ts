@@ -1,5 +1,5 @@
 /**
- * Candidate-related types for the ParikshaSuraksha exam integrity system.
+ * Candidate-related types for the Secure JIT System exam integrity system.
  * Covers candidate profiles, responses, results, and accommodations.
  */
 

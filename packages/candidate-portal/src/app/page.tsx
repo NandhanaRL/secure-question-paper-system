@@ -19,9 +19,9 @@ export default function LandingPage() {
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Shield className="h-8 w-8 text-pariksha-600" aria-hidden="true" />
-            <span className="text-xl font-bold text-pariksha-900">
-              ParikshaSuraksha
+            <Shield className="h-8 w-8 text-primary-600" aria-hidden="true" />
+            <span className="text-xl font-bold text-primary-900">
+              Secure JIT System
             </span>
           </div>
           <nav aria-label="Main navigation" className="flex items-center gap-4">
@@ -33,7 +33,7 @@ export default function LandingPage() {
             </Link>
             <Link
               href="/exam"
-              className="text-sm font-medium bg-pariksha-600 text-white px-4 py-2 rounded-md hover:bg-pariksha-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              className="text-sm font-medium bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
               Start Exam
             </Link>
@@ -43,17 +43,17 @@ export default function LandingPage() {
 
       {/* Hero */}
       <section
-        className="bg-gradient-to-br from-pariksha-50 via-white to-pariksha-50 py-20 md:py-32"
+        className="bg-gradient-to-br from-primary-50 via-white to-primary-50 py-20 md:py-32"
         aria-labelledby="hero-heading"
       >
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h1
             id="hero-heading"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-pariksha-950 leading-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-950 leading-tight"
           >
-            ParikshaSuraksha
+            Secure JIT System
           </h1>
-          <p className="mt-4 text-xl md:text-2xl text-pariksha-700 font-medium">
+          <p className="mt-4 text-xl md:text-2xl text-primary-700 font-medium">
             Ensuring Exam Integrity for Every Aspirant
           </p>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -65,14 +65,14 @@ export default function LandingPage() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/verify/check"
-              className="inline-flex items-center justify-center gap-2 bg-white border-2 border-pariksha-600 text-pariksha-700 px-6 py-3 rounded-lg font-semibold hover:bg-pariksha-50 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center gap-2 bg-white border-2 border-primary-600 text-primary-700 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
               <FileSearch className="h-5 w-5" aria-hidden="true" />
               Verify Submission
             </Link>
             <Link
               href="/results/lookup"
-              className="inline-flex items-center justify-center gap-2 bg-white border-2 border-pariksha-600 text-pariksha-700 px-6 py-3 rounded-lg font-semibold hover:bg-pariksha-50 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center gap-2 bg-white border-2 border-primary-600 text-primary-700 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
             >
               <BarChart3 className="h-5 w-5" aria-hidden="true" />
               Check Results
@@ -88,7 +88,7 @@ export default function LandingPage() {
             id="features-heading"
             className="text-3xl font-bold text-center text-foreground mb-12"
           >
-            How ParikshaSuraksha Protects You
+            How Secure JIT System Protects You
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <FeatureCard
@@ -150,18 +150,18 @@ export default function LandingPage() {
       </section>
 
       {/* Verification CTA */}
-      <section className="py-16 bg-pariksha-600 text-white" aria-labelledby="cta-heading">
+      <section className="py-16 bg-primary-600 text-white" aria-labelledby="cta-heading">
         <div className="container mx-auto px-4 text-center">
           <h2 id="cta-heading" className="text-2xl font-bold mb-4">
             Already Taken Your Exam?
           </h2>
-          <p className="text-pariksha-100 mb-8 max-w-lg mx-auto">
+          <p className="text-primary-100 mb-8 max-w-lg mx-auto">
             Verify that your submission was recorded on the blockchain using the
             hash provided at the end of your exam.
           </p>
           <Link
             href="/verify/check"
-            className="inline-flex items-center gap-2 bg-white text-pariksha-700 px-6 py-3 rounded-lg font-semibold hover:bg-pariksha-50 transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-pariksha-600"
+            className="inline-flex items-center gap-2 bg-white text-primary-700 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-600"
           >
             <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
             Verify My Submission
@@ -170,28 +170,28 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-pariksha-950 text-pariksha-200" role="contentinfo">
+      <footer className="py-8 bg-primary-950 text-primary-200" role="contentinfo">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Shield className="h-5 w-5 text-pariksha-400" aria-hidden="true" />
-            <span className="font-semibold text-white">ParikshaSuraksha</span>
+            <Shield className="h-5 w-5 text-primary-400" aria-hidden="true" />
+            <span className="font-semibold text-white">Secure JIT System</span>
           </div>
-          <p className="text-sm text-pariksha-400">
+          <p className="text-sm text-primary-400">
             Ensuring exam integrity through AI, cryptography, and blockchain technology.
           </p>
-          <p className="text-xs text-pariksha-500 mt-2">
+          <p className="text-xs text-primary-500 mt-2">
             Accessible under RPwD Act 2016. WCAG 2.1 AA compliant.
           </p>
           <div className="mt-4 flex justify-center gap-6">
             <Link
               href="/verify/check"
-              className="text-sm text-pariksha-300 hover:text-white transition-colors"
+              className="text-sm text-primary-300 hover:text-white transition-colors"
             >
               Verify Submission
             </Link>
             <Link
               href="/results/lookup"
-              className="text-sm text-pariksha-300 hover:text-white transition-colors"
+              className="text-sm text-primary-300 hover:text-white transition-colors"
             >
               Check Results
             </Link>
@@ -203,7 +203,7 @@ export default function LandingPage() {
       <div className="fixed bottom-4 right-4 md:hidden no-print">
         <Link
           href="/exam"
-          className="flex items-center justify-center w-14 h-14 rounded-full bg-pariksha-600 text-white shadow-lg hover:bg-pariksha-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          className="flex items-center justify-center w-14 h-14 rounded-full bg-primary-600 text-white shadow-lg hover:bg-primary-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           aria-label="Start exam"
         >
           <Smartphone className="h-6 w-6" aria-hidden="true" />
@@ -224,7 +224,7 @@ function FeatureCard({
 }) {
   return (
     <div className="flex flex-col items-center text-center p-6 rounded-xl border bg-card hover:shadow-md transition-shadow">
-      <div className="text-pariksha-600 mb-4">{icon}</div>
+      <div className="text-primary-600 mb-4">{icon}</div>
       <h3 className="text-lg font-semibold text-card-foreground mb-2">{title}</h3>
       <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
     </div>
@@ -243,7 +243,7 @@ function StepItem({
   return (
     <li className="flex gap-4 items-start">
       <div
-        className="flex-shrink-0 w-10 h-10 rounded-full bg-pariksha-600 text-white flex items-center justify-center font-bold text-lg"
+        className="flex-shrink-0 w-10 h-10 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold text-lg"
         aria-hidden="true"
       >
         {step}

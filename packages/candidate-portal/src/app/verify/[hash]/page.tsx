@@ -92,7 +92,7 @@ export default function VerifyPage() {
   }, [verifyResult, showMerkleProof, merkleProof]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pariksha-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-primary-50 to-white">
       <AccessibilityToolbar />
 
       {/* Header */}
@@ -106,8 +106,8 @@ export default function VerifyPage() {
             <ArrowLeft className="h-5 w-5" aria-hidden="true" />
           </button>
           <div className="flex items-center gap-2">
-            <Shield className="h-6 w-6 text-pariksha-600" aria-hidden="true" />
-            <span className="font-bold text-pariksha-900">ParikshaSuraksha</span>
+            <Shield className="h-6 w-6 text-primary-600" aria-hidden="true" />
+            <span className="font-bold text-primary-900">Secure JIT System</span>
           </div>
         </div>
       </header>
@@ -152,7 +152,7 @@ export default function VerifyPage() {
                 "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                 isLoading || !hashInput.trim()
                   ? "bg-muted text-muted-foreground cursor-not-allowed"
-                  : "bg-pariksha-600 text-white hover:bg-pariksha-700"
+                  : "bg-primary-600 text-white hover:bg-primary-700"
               )}
               aria-label={isLoading ? "Verifying..." : "Verify submission"}
             >
@@ -232,7 +232,7 @@ export default function VerifyPage() {
                               key={idx}
                               className="flex items-center gap-2 text-xs font-mono text-muted-foreground bg-muted/50 px-3 py-2 rounded"
                             >
-                              <span className="text-pariksha-600 font-bold flex-shrink-0">
+                              <span className="text-primary-600 font-bold flex-shrink-0">
                                 [{idx}]
                               </span>
                               <span className="break-all">{hash}</span>

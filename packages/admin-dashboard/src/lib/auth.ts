@@ -1,6 +1,6 @@
-const TOKEN_KEY = "pariksha_access_token";
-const REFRESH_TOKEN_KEY = "pariksha_refresh_token";
-const USER_KEY = "pariksha_user";
+const TOKEN_KEY = "secure_jit_access_token";
+const REFRESH_TOKEN_KEY = "secure_jit_refresh_token";
+const USER_KEY = "secure_jit_user";
 
 export type UserRole =
   | "SUPER_ADMIN"

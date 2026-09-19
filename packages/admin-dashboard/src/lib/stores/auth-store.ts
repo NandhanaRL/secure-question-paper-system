@@ -61,7 +61,7 @@ export const useAuthStore = create<AuthState>()(
       },
     }),
     {
-      name: "pariksha-auth-storage",
+      name: "primary-auth-storage",
       partialize: (state) => ({
         user: state.user,
         isAuthenticated: state.isAuthenticated,

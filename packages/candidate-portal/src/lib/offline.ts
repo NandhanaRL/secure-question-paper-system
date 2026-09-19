@@ -6,7 +6,7 @@
 
 import { openDB, type IDBPDatabase } from "idb";
 
-const DB_NAME = "pariksha_exam_offline";
+const DB_NAME = "secure_jit_exam_offline";
 const DB_VERSION = 1;
 
 const STORE_RESPONSES = "responses";

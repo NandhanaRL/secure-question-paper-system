@@ -163,7 +163,7 @@ export default function QuestionDisplay() {
             Q.{currentIndex + 1}
           </span>
           {question.section && (
-            <span className="text-xs bg-pariksha-100 text-pariksha-700 px-2 py-0.5 rounded-full">
+            <span className="text-xs bg-primary-100 text-primary-700 px-2 py-0.5 rounded-full">
               {question.section}
             </span>
           )}
@@ -237,10 +237,10 @@ export default function QuestionDisplay() {
                 key={option.label}
                 className={cn(
                   "flex items-start gap-4 p-4 rounded-lg border-2 cursor-pointer transition-all",
-                  "hover:border-pariksha-400 hover:bg-pariksha-50/50",
+                  "hover:border-primary-400 hover:bg-primary-50/50",
                   "focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2",
                   isSelected
-                    ? "border-pariksha-600 bg-pariksha-50"
+                    ? "border-primary-600 bg-primary-50"
                     : "border-border bg-card"
                 )}
               >
@@ -250,7 +250,7 @@ export default function QuestionDisplay() {
                   value={option.label}
                   checked={isSelected}
                   onChange={() => selectChoice(option.label)}
-                  className="mt-1 h-5 w-5 text-pariksha-600 border-2 border-gray-400 focus:ring-pariksha-500"
+                  className="mt-1 h-5 w-5 text-primary-600 border-2 border-gray-400 focus:ring-primary-500"
                   aria-label={`Option ${option.label}`}
                 />
                 <div className="flex items-start gap-3 flex-1 min-w-0">
@@ -258,7 +258,7 @@ export default function QuestionDisplay() {
                     className={cn(
                       "flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold",
                       isSelected
-                        ? "bg-pariksha-600 text-white"
+                        ? "bg-primary-600 text-white"
                         : "bg-muted text-muted-foreground"
                     )}
                     aria-hidden="true"
@@ -318,7 +318,7 @@ export default function QuestionDisplay() {
           {currentIndex < questions.length - 1 ? (
             <button
               onClick={saveAndNext}
-              className="px-4 py-2 rounded-md text-sm font-medium bg-pariksha-600 text-white hover:bg-pariksha-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              className="px-4 py-2 rounded-md text-sm font-medium bg-primary-600 text-white hover:bg-primary-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               aria-label="Save response and go to next question"
             >
               Save & Next

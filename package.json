@@ -1,5 +1,5 @@
 {
-  "name": "pariksha-suraksha",
+  "name": "secure-jit",
   "version": "1.0.0",
   "description": "AI-Powered Exam Integrity & Anti-Cheating Engine",
   "private": true,
@@ -16,9 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/divyamohan1993/pariksha-suraksha"
+    "url": "https://github.com/nandana/secure-jit"
   },
-  "author": "Divya Mohan <divyamohan1993@gmail.com>",
+  "author": "Nandana <nandana@gmail.com>",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=20.0.0",

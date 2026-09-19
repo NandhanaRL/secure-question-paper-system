@@ -122,7 +122,7 @@ function AuthenticationFlow() {
     <div className="flex-1 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <Shield className="h-12 w-12 text-pariksha-600 mx-auto mb-4" aria-hidden="true" />
+          <Shield className="h-12 w-12 text-primary-600 mx-auto mb-4" aria-hidden="true" />
           <h1 className="text-2xl font-bold text-foreground">Exam Login</h1>
           <p className="text-muted-foreground mt-2">
             Authenticate to begin your examination
@@ -162,7 +162,7 @@ function AuthenticationFlow() {
                   "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                   isLoading || !admitCard.trim()
                     ? "bg-muted text-muted-foreground cursor-not-allowed"
-                    : "bg-pariksha-600 text-white hover:bg-pariksha-700"
+                    : "bg-primary-600 text-white hover:bg-primary-700"
                 )}
               >
                 {isLoading ? (
@@ -212,7 +212,7 @@ function AuthenticationFlow() {
                     "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                     isLoading || otp.length < 6
                       ? "bg-muted text-muted-foreground cursor-not-allowed"
-                      : "bg-pariksha-600 text-white hover:bg-pariksha-700"
+                      : "bg-primary-600 text-white hover:bg-primary-700"
                   )}
                 >
                   {isLoading ? "Verifying..." : "Login"}
@@ -280,7 +280,7 @@ function CenterVerification() {
     <div className="flex-1 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <MapPin className="h-12 w-12 text-pariksha-600 mx-auto mb-4" aria-hidden="true" />
+          <MapPin className="h-12 w-12 text-primary-600 mx-auto mb-4" aria-hidden="true" />
           <h1 className="text-2xl font-bold text-foreground">Verify Your Seat</h1>
           <p className="text-muted-foreground mt-2">
             Confirm your exam center and seat assignment
@@ -335,7 +335,7 @@ function CenterVerification() {
               "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
               isLoading || !centerId.trim() || !seatNum.trim()
                 ? "bg-muted text-muted-foreground cursor-not-allowed"
-                : "bg-pariksha-600 text-white hover:bg-pariksha-700"
+                : "bg-primary-600 text-white hover:bg-primary-700"
             )}
           >
             {isLoading ? (
@@ -357,7 +357,7 @@ function LoadingExam() {
   return (
     <div className="flex-1 flex items-center justify-center p-4" role="status" aria-label="Loading exam">
       <div className="text-center">
-        <div className="animate-spin h-12 w-12 border-4 border-pariksha-600 border-t-transparent rounded-full mx-auto mb-4" aria-hidden="true" />
+        <div className="animate-spin h-12 w-12 border-4 border-primary-600 border-t-transparent rounded-full mx-auto mb-4" aria-hidden="true" />
         <h2 className="text-xl font-bold text-foreground">Loading Your Exam</h2>
         <p className="text-muted-foreground mt-2">
           Decrypting questions and preparing your exam terminal...
@@ -611,7 +611,7 @@ function ExamTerminal() {
         role="banner"
       >
         <div className="flex items-center gap-3 min-w-0">
-          <Shield className="h-5 w-5 text-pariksha-600 flex-shrink-0" aria-hidden="true" />
+          <Shield className="h-5 w-5 text-primary-600 flex-shrink-0" aria-hidden="true" />
           <div className="min-w-0">
             <p className="text-sm font-bold text-card-foreground truncate">{examName}</p>
             <p className="text-xs text-muted-foreground truncate">{candidateName}</p>
@@ -685,7 +685,7 @@ function ExamTerminal() {
                 "flex items-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium transition-colors",
                 "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
                 showCalculator
-                  ? "bg-pariksha-100 text-pariksha-700"
+                  ? "bg-primary-100 text-primary-700"
                   : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
               )}
               aria-label={showCalculator ? "Close calculator" : "Open calculator"}
@@ -699,7 +699,7 @@ function ExamTerminal() {
 
         <button
           onClick={() => setShowSubmitDialog(true)}
-          className="flex items-center gap-2 px-6 py-2 rounded-md text-sm font-bold bg-pariksha-600 text-white hover:bg-pariksha-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          className="flex items-center gap-2 px-6 py-2 rounded-md text-sm font-bold bg-primary-600 text-white hover:bg-primary-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           aria-label="Submit exam"
         >
           <Send className="h-4 w-4" aria-hidden="true" />
@@ -743,7 +743,7 @@ function ExamTerminal() {
             </div>
             <button
               onClick={() => setShowInstructions(false)}
-              className="mt-6 w-full py-2 rounded-lg bg-pariksha-600 text-white font-semibold hover:bg-pariksha-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              className="mt-6 w-full py-2 rounded-lg bg-primary-600 text-white font-semibold hover:bg-primary-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               autoFocus
             >
               Close
@@ -785,9 +785,9 @@ function ExamTerminal() {
                   className={cn(
                     "py-2 rounded-md text-sm font-bold transition-colors",
                     "focus-visible:ring-2 focus-visible:ring-ring",
-                    key === "=" ? "bg-pariksha-600 text-white hover:bg-pariksha-700" :
+                    key === "=" ? "bg-primary-600 text-white hover:bg-primary-700" :
                     key === "C" ? "bg-red-100 text-red-700 hover:bg-red-200" :
-                    ["+", "-", "*", "/", "(", ")"].includes(key) ? "bg-pariksha-100 text-pariksha-700 hover:bg-pariksha-200" :
+                    ["+", "-", "*", "/", "(", ")"].includes(key) ? "bg-primary-100 text-primary-700 hover:bg-primary-200" :
                     "bg-muted text-card-foreground hover:bg-muted/80"
                   )}
                   aria-label={
@@ -887,7 +887,7 @@ function MobileNavDrawer() {
     <div className="lg:hidden">
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-16 right-4 z-30 p-3 rounded-full bg-pariksha-600 text-white shadow-lg hover:bg-pariksha-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+        className="fixed bottom-16 right-4 z-30 p-3 rounded-full bg-primary-600 text-white shadow-lg hover:bg-primary-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         aria-label="Open question navigation"
       >
         <span className="text-xs font-bold" aria-hidden="true">Nav</span>
@@ -923,7 +923,7 @@ function SubmittingState() {
   return (
     <div className="flex-1 flex items-center justify-center p-4" role="status" aria-label="Submitting exam">
       <div className="text-center">
-        <div className="animate-spin h-12 w-12 border-4 border-pariksha-600 border-t-transparent rounded-full mx-auto mb-4" aria-hidden="true" />
+        <div className="animate-spin h-12 w-12 border-4 border-primary-600 border-t-transparent rounded-full mx-auto mb-4" aria-hidden="true" />
         <h2 className="text-xl font-bold text-foreground">Submitting Your Exam</h2>
         <p className="text-muted-foreground mt-2">
           Encrypting and recording your responses on the blockchain...
@@ -1008,7 +1008,7 @@ function SubmittedState() {
           </p>
           <a
             href={`/verify/${submissionHash}`}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-pariksha-600 text-white font-semibold hover:bg-pariksha-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary-600 text-white font-semibold hover:bg-primary-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             <Shield className="h-4 w-4" aria-hidden="true" />
             Verify My Submission
@@ -1039,7 +1039,7 @@ function ErrorState() {
         </p>
         <button
           onClick={() => { setError(null); setPhase("active"); startAutoCheckpoint(); }}
-          className="mt-6 px-6 py-3 rounded-lg bg-pariksha-600 text-white font-semibold hover:bg-pariksha-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          className="mt-6 px-6 py-3 rounded-lg bg-primary-600 text-white font-semibold hover:bg-primary-700 transition-colors focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
         >
           Return to Exam
         </button>

@@ -44,7 +44,7 @@ export default function DashboardPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
           <p className="text-muted-foreground">
-            ParikshaSuraksha Admin Overview
+            Secure JIT System Admin Overview
           </p>
         </div>
         <div className="flex gap-2">
@@ -54,10 +54,10 @@ export default function DashboardPage() {
               Create Exam
             </Button>
           </Link>
-          <Link href="/admin/questions/generate">
+          <Link href="/admin/questions/bank">
             <Button variant="outline">
-              <Sparkles className="h-4 w-4 mr-2" />
-              Generate Questions
+              <FileQuestion className="h-4 w-4 mr-2" />
+              Question Bank
             </Button>
           </Link>
           <Link href="/admin/audit">

@@ -1,5 +1,5 @@
 /**
- * ExamProctor — Client-side anti-cheat and proctoring module for ParikshaSuraksha.
+ * ExamProctor — Client-side anti-cheat and proctoring module for Secure JIT System.
  *
  * Detects and prevents common cheating vectors during exams:
  *   - Tab/window switching
