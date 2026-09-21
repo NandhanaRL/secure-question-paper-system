@@ -152,12 +152,7 @@ export class ExamProctor {
   private boundHandlers: Map<string, EventListenerOrEventListenerObject> = new Map();
 
   constructor(config: ProctorConfig) {
-    this.config = {
-      maxTabSwitches: 3,
-      maxFocusLoss: 5,
-      heartbeatInterval: 5000,
-      ...config,
-    };
+    this.config = config;
   }
 
   // ---------------------------------------------------------------------------
