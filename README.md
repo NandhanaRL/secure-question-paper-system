@@ -1,5 +1,10 @@
 # Secure Cloud-Based Just-in-Time Question Paper Generation and Management System
 
+**Live Deployments:**
+- 🛡️ **Admin Dashboard:** [https://secure-question-paper-system-admin.vercel.app](https://secure-question-paper-system-admin.vercel.app)
+- 📝 **Candidate Portal:** [https://secure-question-paper-system-candid.vercel.app](https://secure-question-paper-system-candid.vercel.app)
+- ⚙️ **Backend API:** [https://secure-question-paper-backend-8zvm.onrender.com](https://secure-question-paper-backend-8zvm.onrender.com)
+
 ## 1. Overview
 This project is an academic prototype developed to address one of the most critical vulnerabilities in examination management: the premature leakage of question papers. By re-architecting how a question paper is assembled and delivered, this system significantly enhances the integrity of competitive assessments using modern web technologies.
 
