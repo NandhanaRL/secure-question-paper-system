@@ -51,7 +51,7 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground))",
         },
         // Secure JIT System brand colors
-        primary: {
+        brand: {
           50: "#eef2ff",
           100: "#e0e7ff",
           200: "#c7d2fe",
